@@ -10,7 +10,7 @@ let DB_URI;
 if (process.env.NODE_ENV === "test") {
   DB_URI = "postgresql:///jobly_test"
 } else {
-  DB_URI = "postgresql:///jobly"
+  DB_URI = "postgres://postgres.hvtnwjatcjhvwbigyvob:PinkPanther@aws-0-us-west-1.pooler.supabase.com:6543/postgres"
 };
 
 let db = new Client({
